@@ -1,0 +1,175 @@
+        @charset "utf-8";
+        .float_left {
+            float: left;
+        }
+        
+        .float_right {
+            float: right;
+        }
+        
+        .clear_margin {
+            margin: 0!important;
+        }
+        
+        .clear_border {
+            border: 0!important;
+        }
+        
+        .clear_bg {
+            background: none!important;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            background: #f9f9f9;
+        }
+        
+        .zhuce-wrap {
+            width: 854px;
+            height: 559px;
+            background: #fff;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        .zhuce_img {
+            padding-left: 401px;
+        }
+        
+        .zhuce-wrap h1 {
+            font-size: 28px;
+            line-height: 28px;
+            color: #333;
+            padding-left: 337px;
+            margin: 48px 0 43px 0;
+        }
+        
+        .zhuce_id {
+            width: 332px;
+            height: 255px;
+            margin-left: 261px;
+        }
+        
+        .zhuce_id h2 {
+            font-size: 13px;
+            color: #333;
+            line-height: 13px;
+            margin-bottom: 9px;
+        }
+        
+        .zhuce_diqu {
+            width: 100%;
+            height: 42px;
+        }
+        
+        .zhuce_id .zhuce_diqu div {
+            width: 291px;
+            height: 40px;
+            border: 1px solid #e8e8e8;
+            font-size: 13px;
+            color: #333;
+            float: left;
+            line-height: 42px;
+        }
+        
+        .zhuce_id .zhuce_diqu input {
+            width: 39px;
+            height: 42px;
+            border: 1px solid #e8e8e8;
+            border-left: none;
+            background: url(../images/zc_07.jpg) no-repeat center;
+            float: left;
+        }
+        
+        .zhuce_id h3 {
+            font-size: 12px;
+            line-height: 12px;
+            color: #666;
+            margin: 9px 0 23px 0;
+        }
+        
+        .zhuce_id h4 {
+            font-size: 12px;
+            color: #333;
+            line-height: 12px;
+        }
+        
+        .zhuce_phone input:nth-of-type(1) {
+            width: 73px;
+            height: 42px;
+            border: 1px solid #e8e8e8;
+            border-right: none;
+            float: left;
+            background: #fff;
+        }
+        
+        .zhuce_phone input:nth-of-type(2) {
+            width: 246px;
+            height: 40px;
+            float: left;
+            border: 1px solid #e8e8e8;
+            padding-left: 10px;
+        }
+        
+        .zhuce_btn {
+            width: 330px;
+            height: 42px;
+            background: #ff6700;
+            font-size: 12px;
+            line-height: 42px;
+            color: #fff;
+            margin-top: 51px;
+            border: none;
+            margin-left: 1px;
+        }
+        
+        .zhuce-wrap h5 {
+            font-size: 12px;
+            color: #9d9d9d;
+            line-height: 12px;
+            margin-left: 298px;
+            margin-top: 84px;
+        }
+        
+        h6 {
+            position: absolute;
+            left: 820px;
+            bottom: 62px;
+        }
+        
+        h6 ul li {
+            float: left;
+        }
+        
+        h6 li a {
+            display: block;
+            border-left: 1px solid #9db4d6;
+            border-right: 1px solid #e7c2a8;
+            padding: 0 10px;
+            color: #757575;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        
+        h6 li:nth-child(1) a {
+            border-left: none;
+            color: #333;
+        }
+        
+        h6 li:nth-child(4) a {
+            border-right: none;
+        }
+        
+        p {
+            position: absolute;
+            left: 658px;
+            bottom: 30px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #9d9d9d;
+        }

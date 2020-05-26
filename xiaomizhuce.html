@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/removemoren.css">
+    <link rel="stylesheet" href="./css/xiaomizhuce.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="zhuce-wrap">
+        <div class="zhuce_img">
+            <img src="./images/zc_03.jpg" alt="">
+        </div>
+
+        <h1>注册小米账号</h1>
+        <div class="zhuce_id">
+            <h2>国家/地区</h2>
+            <div class="zhuce_diqu"></div>
+            <div>中国</div>
+            <input type="button">
+        </div>
+
+        <h3>成功注册帐号后，国家/地区将不能被修改</h3>
+
+        <h4>手机号码</h4>
+        <div class="zhuce_phone">
+            <input type="button" value="+93">
+            <input type="text" placeholder="请输入手机号码">
+            <span></span>
+        </div>
+        <input class="zhuce_btn" type="button" value="立即注册"><span></span>
+
+    </div>
+    <h5>已阅读并同意：小米 用户协议和 隐私政策</h5>
+    </div>
+    <h6>
+        <ul>
+            <li><a href="">简体</a></li>
+            <li><a href="">繁体</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="" class="clear_margin">常见问题</a></li>
+        </ul>
+    </h6>
+    <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+</body>
+
+</html>
+<script src="./js/ajax.js"></script>
+<script>
+    let phone = $(".zhuce_phone>input:nth-child(2)")
+    phone.blur(function() {
+        let reg = /^1\d{10}$/
+        if (reg.test(phone.val())) {
+            phone.next().html("√")
+        } else {
+            phone.next().html("错，请输入正确的手机号")
+        }
+    })
+
+    let btn = $(".zhuce_btn")
+
+    btn.click(function() {
+        if (phone.next().html() == "√") {
+            let a = new Ajax()
+            a.ajax({
+                method: "post",
+                url: "zhuce.php",
+                params: `username=${phone.val()}`,
+
+                callback: function(str) {
+                    if (str == "1") {
+                        location.href = "xiaomidenglu.html"
+                    } else if (str == "0") {
+                        btn.next().html("注册失败")
+                    }
+                    console.log(str)
+                }
+            })
+        }
+    })
+</script>

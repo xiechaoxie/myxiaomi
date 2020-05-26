@@ -1,0 +1,184 @@
+    @charset "utf-8";
+    .head-wrap {
+        position: relative;
+    }
+    
+    .head_cookie {
+        position: absolute;
+        left: 800px;
+        width: 200px;
+        height: 40px;
+        /* display: none; */
+    }
+    
+    .head_cookie h1 {
+        height: 40px;
+        line-height: 12px;
+        line-height: 40px;
+        float: left;
+        color: #ccc;
+        font-size: 12px;
+    }
+    
+    .head_cookie input {
+        float: left;
+        color: #ccc;
+        height: 40px;
+        margin-left: 10px;
+        background: #333;
+        border: none;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    
+    .banner-wrap,
+    .show-wrap {
+        width: 1226px;
+        margin: 0 auto;
+    }
+    
+    .banner-wrap {
+        height: 465px;
+        position: relative;
+    }
+    
+    .banner-wrap img {
+        position: absolute;
+        left: 50%;
+        margin-left: -938px;
+    }
+    
+    #show {
+        background: #f5f5f5;
+    }
+    
+    .show-wrap {
+        height: 5525px;
+    }
+    
+    .show-wrap h1 {
+        height: 48px;
+        font-size: 35px;
+        line-height: 35px;
+        color: #000;
+        padding-top: 18px;
+    }
+    
+    .show-wrap .show_redmipro {
+        width: 100%;
+        height: 434px;
+    }
+    
+    .show_redmipro .redmipro_l {
+        width: 571px;
+        height: 400px;
+        padding: 34px 0 0 280px;
+        float: left;
+    }
+    
+    .show_redmipro .redmipro_r {
+        width: 375px;
+        height: 434px;
+        background: #fff;
+        float: left;
+    }
+    
+    .redmipro_r h2 {
+        font-size: 30px;
+        line-height: 30px;
+        color: #4f4c47;
+        padding-top: 94px;
+        padding-left: 63px;
+    }
+    
+    .redmipro_r p {
+        font-size: 12px;
+        line-height: 22px;
+        color: #666a69;
+        margin: 11px 0 27px 0;
+        padding-left: 63px;
+    }
+    
+    .redmipro_r h3 {
+        font-size: 23px;
+        line-height: 23px;
+        color: #c37c4e;
+        padding-left: 63px;
+    }
+    
+    .redmipro_r h4 {
+        font-size: 12px;
+        color: #666a69;
+        line-height: 12px;
+        margin-top: 88px;
+        padding-left: 63px;
+    }
+    
+    .show_mi {
+        width: 100%;
+        height: 1495px;
+    }
+    
+    .mi_a {
+        width: 100%;
+        height: 454px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 44px;
+    }
+    
+    .mi_a:nth-child(1) {
+        padding-top: 44px;
+    }
+    
+    .mi_ten {
+        width: 605px;
+        height: 454px;
+        float: left;
+    }
+    
+    .mi_ten .mi_img {
+        width: 686px;
+        height: 328px;
+        padding-left: 189px;
+    }
+    
+    .mi_ten .mi_btm {
+        width: 100%;
+        height: 85px;
+        background: #fff;
+        padding-top: 40px;
+    }
+    
+    .mi_btm span {
+        display: block;
+        font-size: 25px;
+        line-height: 25px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    
+    .mi_btm div h2 {
+        width: 200px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #000;
+        float: left;
+        padding-top: 10px;
+    }
+    
+    .mi_btm div h3 {
+        font-size: 25px;
+        line-height: 25px;
+        color: red;
+        padding-right: 20px;
+        float: right;
+    }
+    
+    .xiaomi_phone h6 {
+        height: 48px;
+        font-size: 35px;
+        line-height: 35px;
+        color: #000;
+        padding-top: 18px;
+    }

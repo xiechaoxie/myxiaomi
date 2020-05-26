@@ -1,0 +1,695 @@
+@charset "utf-8";
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.clear_margin {
+    margin: 0!important;
+}
+
+.clear_border {
+    border: 0!important;
+}
+
+.clear_bg {
+    background: none!important;
+}
+
+.head-wrap,
+.logo-wrap,
+.banner-wrap,
+.case-wrap,
+.btm-wrap,
+.foot-wrap {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.head-wrap {
+    position: relative;
+}
+
+.head_cookie {
+    position: absolute;
+    left: 800px;
+    width: 200px;
+    height: 40px;
+    display: none;
+}
+
+.head_cookie h1 {
+    height: 40px;
+    line-height: 12px;
+    line-height: 40px;
+    float: left;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.head_cookie input {
+    float: left;
+    color: #ccc;
+    height: 40px;
+    margin-left: 10px;
+    background: #333;
+    border: none;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+
+/* banner */
+
+.banner-wrap {
+    height: 670px;
+}
+
+.banner_top {
+    height: 459px;
+}
+
+.banner_show {
+    width: 234px;
+    height: 420px;
+    background: #9da2a1;
+    float: left;
+    padding: 20px 0;
+}
+
+.banner_show ul {
+    width: 204px;
+    height: 12px;
+    padding: 15px 0;
+    background: #9da2a1;
+    padding-left: 30px;
+    position: relative;
+}
+
+.banner_show ul:hover {
+    background: orange;
+}
+
+.banner_show ul img {
+    position: absolute;
+    left: 202px;
+}
+
+.banner_show ul li {
+    float: left;
+    margin-right: 4px;
+}
+
+.banner_show ul li a {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+}
+
+.banner_pic {
+    width: 992px;
+    height: 459px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_pic img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 992px;
+}
+
+.banner_pic .slide img:nth-child(1) {
+    left: 0;
+}
+
+.banner_pic>ul {
+    list-style: none;
+    position: absolute;
+    left: 850px;
+    background: red;
+    bottom: 19px;
+    width: 110px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.banner_pic ul li {
+    cursor: pointer;
+}
+
+.banner_pic>span {
+    position: absolute;
+    top: 210px;
+    display: block;
+    /* width: 60px;
+    height: 40px; */
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.banner_pic>span:nth-of-type(1) {
+    left: 0px;
+}
+
+.banner_pic>span:nth-of-type(2) {
+    right: 0px;
+}
+
+.banner_btm {
+    height: 171px;
+    margin-top: 14px;
+}
+
+.banner_btm .redmi_fun {
+    width: 230px;
+    height: 168px;
+    background: #5f5750;
+    float: left;
+    margin-right: 15px;
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+.banner_btm .redmi_fun div {
+    float: left;
+}
+
+.banner_btm .redmi_fun a {
+    width: 64px;
+    height: 70px;
+    display: block;
+    color: #ceccca;
+    font-size: 11px;
+    line-height: 11px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-align: center;
+    padding: 13px 5px 0;
+}
+
+.redmi_fun .iconfont {
+    font-size: 25px;
+}
+
+.redmi_fun h1 {
+    margin-top: 8px;
+}
+
+.banner_btm .banner_redmi {
+    float: left;
+    height: 170px;
+    margin-right: 14px;
+}
+
+.banner_redmi img {
+    width: 1005;
+    height: 100%;
+}
+
+
+/* case */
+
+#case {
+    background: #f5f5f5;
+}
+
+.case-wrap {
+    height: 6031px;
+}
+
+
+/* 小米闪购 */
+
+.case_shop h2 {
+    height: 62px;
+    line-height: 62px;
+    font-size: 21px;
+    color: #333;
+}
+
+.case_shop {
+    width: 100%;
+    height: 544px;
+}
+
+.case_shop .shop_c {
+    height: 361px;
+}
+
+.shop_c div {
+    width: 233px;
+    height: 339px;
+    background: #fafafa;
+    margin-right: 14px;
+    float: left;
+}
+
+.shop_c div:nth-child(1) {
+    background: #f1eded url(../images/s2_06.jpg) no-repeat;
+    background-position: 101px 109px;
+    border-top: 1px solid #e53935;
+}
+
+.shop_c div:nth-child(1) h3 {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ef4a40;
+    padding-top: 60px;
+    margin-bottom: 119px;
+    padding-left: 78px;
+}
+
+.shop_c div:nth-child(1) h4 {
+    width: 100%;
+    font-size: 13px;
+    color: #706f6f;
+    padding-left: 78px;
+    margin-bottom: 33px;
+}
+
+.shop_c div:nth-child(1) span {
+    display: block;
+    padding-left: 33px;
+}
+
+.shop_c div:nth-child(2) {
+    border-top: 1px solid #00c0a5;
+}
+
+.shop_c div:nth-child(3) {
+    border-top: 1px solid #ffac13;
+}
+
+.shop_c div:nth-child(4) {
+    border-top: 1px solid #83c44e;
+}
+
+.shop_c div:nth-child(5) {
+    border-top: 1px solid #2196f3;
+}
+
+.shop_c div em {
+    display: block;
+    padding: 57px 0 50px 55px;
+}
+
+.shop_c div h5 {
+    font-size: 13px;
+    color: #202020;
+    margin-bottom: 10px;
+    padding-left: 33px;
+}
+
+.shop_c div h6 {
+    font-size: 11px;
+    color: #bebebe;
+    padding-left: 57px;
+    margin-bottom: 20px;
+}
+
+.shop_c div p {
+    font-size: 12px;
+    color: #fa6509;
+    padding-left: 78px;
+}
+
+.shop_c div i {
+    display: block;
+    float: left;
+}
+
+.shop_c div b {
+    display: block;
+    color: #bebebe;
+    float: left;
+}
+
+.case_shop .shop_btm {
+    width: 1005;
+    height: 120px;
+}
+
+.case_shop .shop_btm img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 手机 */
+
+.case_phone {
+    width: 100%;
+    height: 850px;
+}
+
+.case_phone h1 {
+    width: 100%;
+    height: 79px;
+    font-size: 20px;
+    color: #333;
+    line-height: 79px;
+}
+
+.phone_l {
+    float: left;
+}
+
+.case_phone .phone_r {
+    width: 979px;
+    height: 615px;
+    float: left;
+    margin-left: 12px;
+    margin-bottom: 36px;
+}
+
+.phone_r ul {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.phone_r ul:nth-child(2) {
+    margin-bottom: none;
+}
+
+.phone_r ul li {
+    width: 235px;
+    height: 300px;
+    background: #fff;
+    text-align: center;
+}
+
+.phone_r ul li img {
+    padding: 36px 0 0 69px;
+    margin-bottom: 38px;
+}
+
+.phone_r ul li h2 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.phone_r ul li h3 {
+    font-size: 11px;
+    color: #b0b0b0;
+    margin-bottom: 18px;
+}
+
+.phone_r ul li h4 {
+    font-size: 12px;
+    color: #ff6700;
+}
+
+
+/* 家电 */
+
+.case_home {
+    width: 100%;
+    height: 850px;
+}
+
+.case_home h1 {
+    width: 100%;
+    height: 79px;
+    font-size: 20px;
+    color: #333;
+    line-height: 79px;
+}
+
+.case_home .home_t {
+    width: 100%;
+    height: 615px;
+    float: left;
+    margin-bottom: 36px;
+}
+
+.home_t ul {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.home_t ul:nth-child(2) {
+    margin-bottom: none;
+}
+
+.home_t ul li {
+    width: 235px;
+    height: 300px;
+    background: #fff;
+    text-align: center;
+}
+
+.home_t ul li img {
+    padding: 36px 0 0 69px;
+    margin-bottom: 38px;
+}
+
+.home_t ul li h2 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home_t ul li h3 {
+    font-size: 11px;
+    color: #b0b0b0;
+    margin-bottom: 18px;
+}
+
+.home_t ul li h4 {
+    font-size: 12px;
+    color: #ff6700;
+}
+
+.home_t ul:nth-of-type(1) li:nth-child(1) {
+    background: #fff url(../images/jjidian_06.jpg) no-repeat;
+    background-position: 62px 139px;
+}
+
+.home_t ul:nth-of-type(2) li:nth-child(1) {
+    background: #fff url(../images/jjidian_06.jpg) no-repeat;
+    background-position: 62px 139px;
+}
+
+.home_t li:nth-child(1) h2 {
+    font-size: 21px;
+    text-align: center;
+    color: #4f4f4f;
+    padding-top: 41px;
+    margin-bottom: 10px;
+}
+
+.home_t ul li:nth-child(1) h3 {
+    font-size: 13px;
+    color: #aeb2b5;
+    margin-bottom: 14px;
+}
+
+
+/* 视频 */
+
+.case_sp {
+    width: 100%;
+    height: 286px;
+}
+
+.case_sp ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.case_sp li {
+    float: left;
+    width: 295px;
+    height: 286px;
+    background: #fff;
+}
+
+.case_sp li h2 {
+    font-size: 12px;
+    line-height: 12px;
+    color: #333333;
+    margin-top: 32px;
+    padding-left: 81px;
+}
+
+
+/* btm-wrap */
+
+.btm-wrap {
+    height: 272px;
+}
+
+.btm_t {
+    width: 100%;
+    height: 79px;
+    border-bottom: 1px solid #ccc;
+}
+
+.btm_t li {
+    float: left;
+}
+
+.btm_t li a {
+    display: block;
+    height: 25px;
+    padding: 0 54px;
+    margin-top: 27px;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    color: #616161;
+}
+
+.btm_c {
+    width: 974px;
+    height: 151px;
+    margin-top: 40px;
+    float: left;
+}
+
+.btm_l {
+    height: 100%;
+    float: left;
+    margin-right: 104px;
+}
+
+.btm_l li {
+    width: 56px;
+    margin-bottom: 17px;
+}
+
+.btm_l:last-child {
+    margin-right: 0;
+}
+
+.btm_l li a {
+    display: block;
+    font-size: 11px;
+    color: #ccc;
+    line-height: 11px;
+}
+
+.btm_l li:nth-child(1) a {
+    margin-bottom: 32px;
+    font-size: 12px;
+    color: #000;
+    line-height: 12px;
+}
+
+.btm_l li:last-child {
+    margin-bottom: 0;
+}
+
+.btm_r {
+    width: 251px;
+    height: 111px;
+    float: left;
+    margin-top: 40px;
+}
+
+.btm_r h1 {
+    font-size: 15px;
+    color: orange;
+    padding-left: 57px;
+}
+
+.btm_r h2 {
+    font-size: 11px;
+    color: #616161;
+    padding-left: 55px;
+    margin: 12px 0 8px 0;
+}
+
+.btm_r div {
+    width: 118px;
+    height: 28px;
+    border: 1px solid orange;
+    color: orange;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 66px;
+}
+
+.btm_r h3 {
+    margin: 14px 0 0 66px;
+    font-size: 11px;
+    color: #616161;
+    line-height: 11px;
+}
+
+#foot {
+    background: #fafafa;
+}
+
+.foot-wrap {
+    height: 232px;
+}
+
+.foot-wrap .foot_img {
+    float: left;
+    padding-top: 29px;
+}
+
+.foot-wrap ul {
+    float: left;
+    margin: 34px 0 5px 10px;
+}
+
+.foot-wrap ul li {
+    float: left;
+}
+
+.foot-wrap ul li a {
+    display: block;
+    font-size: 11px;
+    line-height: 11px;
+    color: #757575;
+    padding: 0 4px;
+    border-right: 1px solid #e7c9b6;
+    border-left: 1px solid #b6c9e7;
+}
+
+.foot-wrap ul li:nth-child(1) a {
+    padding-left: 0;
+    border-left: none;
+}
+
+.foot-wrap ul li:last-child a {
+    padding-right: 0;
+    border-right: none;
+}
+
+.foot-wrap .foot_p {
+    width: 970px;
+    margin-left: 66px;
+}
+
+.foot-wrap .foot_p p {
+    margin-bottom: 7px;
+    font-size: 11px;
+    line-height: 11px;
+    color: #b0b0b0;
+}
+
+.foot-wrap h1 {
+    font-size: 17px;
+    color: #bababa;
+    line-height: 17px;
+    padding: 68px 0 0 429px;
+}

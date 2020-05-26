@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/removemoren.css">
+    <link rel="stylesheet" href="./css/xiaomidenglu.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div id="denglu">
+
+
+        <div class="denglu_logo">
+            <div>
+                <img src="./images/zc_03.jpg" alt="">
+            </div>
+            <div>
+                <h1>小米商城</h1>
+                <h2>让每个人都能享受科技的乐趣</h2>
+            </div>
+        </div>
+
+        <div class="denglu_id">
+            <ul class="denglu_zh">
+                <li><a href="">账号登录</a</li>
+                <li><a href="">扫码登录</a></li>
+            </ul>
+
+            <div class="denglu_input">
+                <input type="text" placeholder="邮箱/手机号码/小米ID">
+                <input type="password" placeholder="密码">
+                <span></span>
+                <input type="button" value="登录">
+
+            </div>
+
+            <div class="denglu_h">
+                <h3><a href="">手机短信登录/注册</a></h3>
+                <ul>
+                    <li><a href="">立即注册</a></li>
+                    <li><a href="">忘记密码?</a></li>
+                </ul>
+            </div>
+
+            <div class="denglu_other">
+                <h4>其他方式登录</h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./images/other_03.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/other_03.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/other_03.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/other_03.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h6>
+            <ul>
+                <li><a href="">简体</a></li>
+                <li><a href="">繁体</a></li>
+                <li><a href="">English</a></li>
+                <li><a href="" class="clear_margin">常见问题</a></li>
+                <li><a href="" class="clear_margin">隐私政策</a></li>
+            </ul>
+        </h6>
+        <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+
+
+    </div>
+</body>
+
+</html>
+<script src="./js/ajax.js"></script>
+<script src="./js/cookie.js"></script>
+<script>
+    let btn = $(".denglu_input>input:nth-of-type(3)")
+    let span = $(".denglu_input>span")
+    btn.click(function() {
+        let a = new Ajax()
+        a.ajax({
+            method: "post",
+            url: "denglu.php",
+            params: `username=${$(".denglu_input>input:nth-of-type(1)").val()}&userpass=${$(".denglu_input>input:nth-of-type(2)").val()}`,
+            callback: show
+        })
+
+        function show(result) {
+            if (result == "1") {
+                addCookie("username", $(".denglu_input>input:nth-of-type(1)").val(), 7);
+                location.href = "xiaomishouye.html"
+            } else if (result == "0") {
+                span.html("登录失败，用户名或者密码不对")
+            } else {
+                span.html("登录失败，服务器出错!")
+            }
+        }
+    })
+</script>
